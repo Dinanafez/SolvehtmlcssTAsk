@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .perant{
+            display: grid;
+            width: 700px;
+            height: 500px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,1fr);
+            background-color: black;
+            margin: auto;
+            gap: 10px;
+        }
+        .head{
+            grid-column: 1/-1;
+            background-color: yellow;
+        }
+        .slide{
+            grid-row: 2/4;
+            background-color: orange;
+        }
+        .nav{
+            grid-column: 2/4;
+            background-color: aqua;
+        }
+        .article{
+            grid-row: 3/4;
+            background-color: gray;
+        }
+        .foot{
+            background-color: brown;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="perant">
+        <div class="head">Header</div>
+        <div class="slide">Slidebar</div>
+        <div class="nav">Nav</div>
+        <div class="article">
+            <h2>Article </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rem neque quia consectetur dicta accusantium! Dolore vitae vero neque placeat quam sunt omnis nisi adipisci, itaque saepe cupiditate voluptatem fugit hic iusto fugiat nam reiciendis eius minus expedita eaque quibusdam eveniet veritatis? Quis laborum rem deserunt dolorem quam ea maiores!</p>
+        </div>
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>
